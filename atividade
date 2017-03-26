@@ -1,0 +1,63 @@
+Turm = {}
+
+def Consult():
+    Preferência = int(input("1, turmas\n2, alunos\n3, aluno"))
+    if(Preferência == 1):
+        print(Turm)
+    elif(Preferência == 2):
+        NomeDaTurma = str(input("Qual o nome da turma :"))
+        print(turmas[NomeDaTurma])
+    elif(Preferência == 3):
+        NomeDaTurma = str(input("Qual o nome da turma :"))
+        Matri = str(input("Qual a matricula do aluno :"))
+        print(Turm[NomeDaTurma][Matri])
+def acrescentarNotaDosAluno():
+    NomeDaTurma = str(input("Qual a matricula do aluno :"))
+    Alunos = {}
+    Matri = str(input("A matricula"))
+    Notus = []
+    T = 'sim'
+    while (T == 'sim'):
+        Nota = float(input("Digite a nota do aluno :"))
+        Nota.append(Nota)
+        T = str(input("Adicionar mais notas ?"))
+    Turm[NomeDaTurma][Matri] = Notas
+
+def acrescentarTurma():
+    NomeTurm = str(input("Qual o nome da turma ?"))
+    Alunos = {}
+    Turm[Nome]= Alunos
+def CalcularAMedia(Notas):
+    Soma = 0
+    for i in Notas :
+        Soma +=i
+    return Soma/len(Notas)
+
+def MaT():
+    Soma = 0
+    Contad = 0
+    NomeDaTurma = str(input("Qual o nome da turma"))
+    for i in Turm[NomeDaTurma]:
+        soma += CalcularAMedia(Turm[NomeDaTurma][i])
+        Contad +=1
+    return Soma/Contad
+def menu():
+    Contado = 'sim'
+    While (Contado == 's'):
+        Preferência = int(input("O que deseja ?\n1, Adicionar Turma\n2, Adicionaral Aluno e Notas\n3, Calcular média de um Aluno\n4 , Calcular média de uma Turma\n5, Terminar\n"))
+        if(Preferência == I) :
+            AcrescentarTurma()
+        elif(Preferência == II):
+            acrescentarNotaDosAluno()
+        elif(Preferência == III):
+            Tur= str(input("turma"))
+            Matri = str(input("matricula"))
+            print(calcularAMedia(Turm[Tur][Matri]))
+        elif(Preferência == IV):
+            print(mediaTurma())
+        elif(Preferência == 0):
+            print(mediaTurma())
+        elif(Preferência == V):
+            Continuar = 'nao'
+
+menu()
